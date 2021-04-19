@@ -1,1 +1,1 @@
-del C:\Projetos\sys_login\*.exe /s
+del C:\Projetos\sys_config\*.exe /s

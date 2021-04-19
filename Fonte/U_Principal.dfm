@@ -4,14 +4,15 @@ object frmPrincipal: TfrmPrincipal
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsSingle
   Caption = 'Principal'
-  ClientHeight = 231
-  ClientWidth = 514
+  ClientHeight = 252
+  ClientWidth = 549
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
   Font.Name = 'Tahoma'
   Font.Style = []
+  FormStyle = fsMDIForm
   Menu = mnuPrincipal
   OldCreateOrder = False
   WindowState = wsMaximized
@@ -23,10 +24,15 @@ object frmPrincipal: TfrmPrincipal
     object Cadastros1: TMenuItem
       Caption = 'Cadastros'
       object Produto1: TMenuItem
-        Caption = 'Produto...'
+        Caption = 'Usu'#225'rio...'
+        OnClick = Produto1Click
       end
-      object Fornecedor1: TMenuItem
-        Caption = 'Fornecedor...'
+      object Grupodeusurio1: TMenuItem
+        Caption = 'Grupo de usu'#225'rio'
+        OnClick = Grupodeusurio1Click
+      end
+      object N1: TMenuItem
+        Caption = '-'
       end
     end
   end

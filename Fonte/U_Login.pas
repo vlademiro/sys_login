@@ -17,6 +17,7 @@ type
     edtNome: TEdit;
     edtSenha: TEdit;
     procedure btnLoginClick(Sender: TObject);
+    procedure FormActivate(Sender: TObject);
   private
     { Private declarations }
   public
@@ -52,6 +53,11 @@ begin
     end;
 
     login;
+end;
+
+procedure TfrmLogin.FormActivate(Sender: TObject);
+begin
+    edtNome.SetFocus;
 end;
 
 procedure TfrmLogin.login;

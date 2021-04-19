@@ -11,9 +11,14 @@ type
     mnuPrincipal: TMainMenu;
     Cadastros1: TMenuItem;
     Produto1: TMenuItem;
-    Fornecedor1: TMenuItem;
+    Grupodeusurio1: TMenuItem;
+    N1: TMenuItem;
+    procedure Produto1Click(Sender: TObject);
+    procedure Grupodeusurio1Click(Sender: TObject);
   private
     { Private declarations }
+    procedure Chama_FrmUsuario;
+    procedure Chama_FrmGrupo;
   public
     { Public declarations }
   end;
@@ -24,5 +29,29 @@ var
 implementation
 
 {$R *.dfm}
+
+uses U_Usuario, U_Grupo;
+
+{ TfrmPrincipal }
+
+procedure TfrmPrincipal.Chama_FrmGrupo;
+begin
+    frmGrupo.Show;
+end;
+
+procedure TfrmPrincipal.Chama_FrmUsuario;
+begin
+    frmUsuario.Show;
+end;
+
+procedure TfrmPrincipal.Grupodeusurio1Click(Sender: TObject);
+begin
+  Chama_FrmGrupo;
+end;
+
+procedure TfrmPrincipal.Produto1Click(Sender: TObject);
+begin
+    Chama_FrmUsuario;
+end;
 
 end.
